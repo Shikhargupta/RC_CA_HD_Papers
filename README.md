@@ -41,17 +41,22 @@ Database of Reconfigurable Computing, Computer Architecture and Hardware Design 
 * Pipelining: Early microprocessors processed one instruction from fetch to retirement before starting on the next instruction.           Pipelining, which had been around at least since the 1960s in mainframe computers, was an obvious solution to that performance           bottleneck
 * On-Chip Caches:  The latency to get instructions and data from off-chip memory to the on-chip processing elements was too long. The     result: an on-chip cache
 * Branch Prediction: The benefits of pipelining are lost if conditional branches produce pipeline stalls waiting for the condition on     which the branch is based to be resolved. Hardware (run-time) branch predictors did not show up on the microprocessor chip until the     early 1990s
-* Out-of-order processing:  This produces a bottleneck each time an instruction that can not be carried out prevents a subsequent         instruction from being executed if the subsequent instruction has all that it needs to begin execution
+* Out-of-order processing:  This produces a bottleneck each time an instruction that can not be carried out prevents a subsequent instruction from being executed if the subsequent instruction has all that it needs to begin execution
 * Clusters: Single die size continues to increase, feature size continues to decrease, and on-chip frequencies continue to increase. The   result is that a value produced by a functional unit at one corner of the chip can not traverse the chip and be available as a source   to a functional unit at the opposite corner of the chip in the next cycle. The result—partition the execution core into clusters so     that most of the time, results produced by a functional unit in one cluster will be used by another functional unit in the same         cluster
-* Chip Multiprocessor: An alternative use of the increasing richness of the die (many more transistors, combined with faster operating      frequency) is to partition the chip into regions, with an identical processoroccupying each region.Theparadigm is referred to as CMP,    for chip multiprocessor
+* Chip Multiprocessor: An alternative use of the increasing richness of the die (many more transistors, combined with faster operating frequency) is to partition the chip into regions, with an identical processoroccupying each region.The paradigm is referred to as CMP, for chip multiprocessor
 
 #### Future Aspects
-* Some signals will require multiple cycles to traverse the chip, and one must examine carefully which signals will be allowed to do       that. Most signals will probably not be allowed to. Therein lies the challenge: to redesign the data path in light of the new           constraint of wire length.
+* Some signals will require multiple cycles to traverse the chip, and one must examine carefully which signals will be allowed to do that. Most signals will probably not be allowed to. Therein lies the challenge: to redesign the data path in light of the new constraint of wire length.
 * The future transistor budget can provide enormous flexibility to properly take advantage of the variability of the on-chip needs. 
-* an on-chip structure, perhaps a low granularity FPGA, but more likelyahighergranularityreconfigurablelogicstructure,will be common to   future microprocessors.
+* an on-chip structure, perhaps a low granularity FPGA, but more likely a higher granularity reconfigurable logic structure, will be common to future microprocessors.
 
 
+### [Memory Scaling: A Systems Architecture Perspective, Onur Mutlu, Proceedings of the IEEE International Memory Workshop 2013] (computer-architecture/memory_scaling.pdf).
 
-
-
-  
+* In this paper, after describing the demands and challenges faced by the memory system, author examines some promising research and design directions to overcome challenges pose by memory scaling.
+* He talks about three key solution directions - i) New DRAM architectures to enable better integration with rest of the system ii) New alternatives that may replace DRAM iii) Providing predictable performance and QoS to applicarions sharing the memory.
+* energy and power consumption have become key design limiters as the memory system continues to be responsible for a significant fraction of overall system energy/power.
+* In the context of new DRAM architecture, he says key problems can be solved more easily if we rethink the DRAM architecture and functions, and redesign the interface such that DRAM, controllers, and processors closely cooperate. He calls this high-level solution approach system-DRAM co-design. He also provides solutions to the common bottlenecks of memory scaling - refresh rates, parallelism, latency and energy consumption, capacity and bandwidth waste.
+* He has shed light over new emerging technologies such as PCM and STT-MRAM that usually provide a tradeoff, and seem unlikely to completely replace DRAM, as they are not strictly superior to DRAM.
+* He talks about hybrid memory - combination of storage and memory. But as the non-volatility of main memory opens up new opportunities that can be exploited by higher levels of the system stack to improve performance and eliability/consistency, it also can lead to potentially unforeseen security and privacy issues: critical and private data can persist long after the system is powered down, and an attacker can take advantage of this fact.
+* He also points towards the fact that how providing performance to the various applications sharing the same memory can lead to better system performance. He has also talked about the improvement of retention of flash storages by introducing simple error correcting codes.
