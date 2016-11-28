@@ -64,7 +64,7 @@ Database of Reconfigurable Computing, Computer Architecture and Hardware Design 
 
 ## Reconfigurable Computing
 
-### A Novel FPGA Architecture Supporting Wide, Shallow Memories, Steven W. Oldridge and Steven J. E. Wilton, IEEE TRANSACTIONS ON VLSI SYSTEMS, 2005 [reconfigurable_computing/wide, shallow memories using fpga.pdf]
+### [A Novel FPGA Architecture Supporting Wide, Shallow Memories, Steven W. Oldridge and Steven J. E. Wilton, IEEE TRANSACTIONS ON VLSI SYSTEMS, 2005] (reconfigurable_computing/wide, shallow memories using fpga.pdf)
 
 * The author proposes an architecture for wide and shallow memories, designed specifically to support wide buffering applications.
 * These memories may be over 100 bits in width, but only a handful (8–32) words deep. As I/O bandwidth on FPGAs increases, and more circuits begin to take advantage of these high speed I/Os, the need for efficient wide data blocks, including wide, shallow memories, will grow.
