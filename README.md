@@ -60,3 +60,13 @@ Database of Reconfigurable Computing, Computer Architecture and Hardware Design 
 * He has shed light over new emerging technologies such as PCM and STT-MRAM that usually provide a tradeoff, and seem unlikely to completely replace DRAM, as they are not strictly superior to DRAM.
 * He talks about hybrid memory - combination of storage and memory. But as the non-volatility of main memory opens up new opportunities that can be exploited by higher levels of the system stack to improve performance and eliability/consistency, it also can lead to potentially unforeseen security and privacy issues: critical and private data can persist long after the system is powered down, and an attacker can take advantage of this fact.
 * He also points towards the fact that how providing performance to the various applications sharing the same memory can lead to better system performance. He has also talked about the improvement of retention of flash storages by introducing simple error correcting codes.
+
+
+## Reconfigurable Computing
+
+### A Novel FPGA Architecture Supporting Wide, Shallow Memories, Steven W. Oldridge and Steven J. E. Wilton, IEEE TRANSACTIONS ON VLSI SYSTEMS, 2005 [reconfigurable_computing/wide, shallow memories using fpga.pdf]
+
+* The author proposes an architecture for wide and shallow memories, designed specifically to support wide buffering applications.
+* These memories may be over 100 bits in width, but only a handful (8–32) words deep. As I/O bandwidth on FPGAs increases, and more circuits begin to take advantage of these high speed I/Os, the need for efficient wide data blocks, including wide, shallow memories, will grow.
+*  By adding only a modest amount of circuitry, the configuration memory in the unused switch blocks can be used to implement wide, shallow buffers and other similar memory structures.
+*  Rather than adding new memory bits to the switch block, author's approach is to provide circuitry to allow the user to write and read the configuration memory corresponding to all diagonal connections within the switch block.
