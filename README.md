@@ -70,3 +70,11 @@ Database of Reconfigurable Computing, Computer Architecture and Hardware Design 
 * These memories may be over 100 bits in width, but only a handful (8–32) words deep. As I/O bandwidth on FPGAs increases, and more circuits begin to take advantage of these high speed I/Os, the need for efficient wide data blocks, including wide, shallow memories, will grow.
 *  By adding only a modest amount of circuitry, the configuration memory in the unused switch blocks can be used to implement wide, shallow buffers and other similar memory structures.
 *  Rather than adding new memory bits to the switch block, author's approach is to provide circuitry to allow the user to write and read the configuration memory corresponding to all diagonal connections within the switch block.
+
+### [Simplified Spiking Neural Network Architecture and STDP Learning Algorithm Applied to Image Classification, EURASIP Journal on Image and Video Processing, 2015] (reconfigurable_computing/STDP algo.pdf)
+
+* The paper talks about the wide range applications of SNN and simplified algorithm to train the feed forward network on hardware. The paper also compares the results of simplified algorithm with that of conventional one.
+* The network used in the paper consists of one input layer (sensory neurons) and one hidden layer. Each sensory neuron has its weighted receptive field (5x5 window).
+* Spike time dependent plasticity algo is used to train the network so that synapses are adapted according to the training data (handwritten integers).
+* Reinforcement learning curve is used to adapt the weights (synapses) between the neurons.
+* The algorithm is simplified so that it can be efficiently implemented on FPGAs (reconfigurable logic) and hence can be used as hardware accelerators for the network.
