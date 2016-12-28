@@ -62,6 +62,15 @@ Database of Reconfigurable Computing, Computer Architecture and Hardware Design 
 * He also points towards the fact that how providing performance to the various applications sharing the same memory can lead to better system performance. He has also talked about the improvement of retention of flash storages by introducing simple error correcting codes.
 
 
+### [Memory Performance Attacks: Denial of Memory Service in Multi-Core Systems, Usenix Security, 2007](computer-architecture/performance in multi-core).
+
+* This paper demonstrates that current multi-core processors are vulnerable to a new class of Denial of Service (DoS) attacks because the memory system is "unfairly" shared among multiple cores.
+* 
+
+
+
+
+
 ## Reconfigurable Computing
 
 ### [A Novel FPGA Architecture Supporting Wide, Shallow Memories, Steven W. Oldridge and Steven J. E. Wilton, IEEE TRANSACTIONS ON VLSI SYSTEMS, 2005] (reconfigurable_computing/wide, shallow memories using fpga.pdf)
